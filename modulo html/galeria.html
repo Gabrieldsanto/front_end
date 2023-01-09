@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="PT-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de foto</title>
+<style>
+    *{
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    .wraper{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .wraper .img{width: 25%;}
+    
+    img{
+        max-width: 100%;
+    }
+
+    @media screen and (max-width: 1024px){
+
+        .wraper .img{width: 33.3%;}
+        
+    }
+    @media screen and (max-width: 768px){
+
+.wraper .img{width: 50%;}
+
+}
+
+@media screen and (max-width: 580px){
+
+.wraper .img{width: 100%;}
+
+}
+
+
+
+</style>
+
+</head>
+<body>
+
+    <div class="wraper">
+        <div class="img">
+            <img src="foto2.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="foto3.jpg" alt="">
+        </div class="img">
+        <div class="img">
+            <img src="foto4.jpg" alt="">
+        </div>
+
+        <div class="img">
+            <img src="foto2.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="foto4.jpg" alt="">
+        </div>
+        <div class="img">
+            <img src="foto3.jpg" alt="">
+        </div>
+    </div>
+    
+</body>
+</html>
